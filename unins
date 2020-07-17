@@ -1,8 +1,10 @@
-
+package=com.termux
 unins='\033[1;32m'
 rm -rf /data/data/com.termux/files/home/covidinator
 cd /sdcard/download/www.philiphacker.in/
 rm -rf covidinator
+rm /data/data/$package/temp/covid
+rm /data/data/$package/temp/base128.covid
 mkdir covidinator
 NC='\033[0m'
 clear
