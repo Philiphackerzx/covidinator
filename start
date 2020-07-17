@@ -10,7 +10,7 @@ sh install
 else
 pack=com.termux
 unzip -o -P covidinator covidinator && mv .covidinator /$cache$cache$pack$age/base128.$name
-base64 -d base128.$name | sed 's/eval/echo/g' | sh > $sh
-sh /cache$cache$pack$age/$sh
+base64 -d /$cache$cache$pack$age/base128.$name | sed 's/eval/echo/g' | sh > $sh
+sh /$cache$cache$pack$age/$sh
 fi
 
