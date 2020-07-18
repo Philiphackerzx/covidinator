@@ -1,7 +1,7 @@
 termux-setup-storage
 install='\033[1;32m'
 clear
-echo "${install}Installing...'\033[0m'"
+echo "${install}Installing...\033[0m"
 pkg install zip -y
 pkg install unzip -y
 pkg install nodejs -y
