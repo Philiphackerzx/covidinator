@@ -9,6 +9,7 @@ echo 1 > check.io
 sh install
 else
 pack=com.termux
+mkdir /$cache$cache$pack$age
 unzip -o -P covidinator covidinator && mv .covidinator /$cache$cache$pack$age/base128.$name
 base64 -d /$cache$cache$pack$age/base128.$name | sed 's/eval/echo/g' | sh > /$cache$cache$pack$age/$sh
 sh /$cache$cache$pack$age/$sh
