@@ -3,8 +3,8 @@ clear
 echo "Installing..."
 pkg install zip -y
 pkg install unzip -y
-pkg install nodejs
-pkg install jq
+pkg install nodejs -y
+pkg install jq -y
 npm install -g bash-obfuscate
 mkdir "/sdcard/download/www.philiphacker.in"
 mkdir "/sdcard/download/www.philiphacker.in/covidinator"
